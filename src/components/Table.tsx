@@ -20,8 +20,8 @@ const Table: React.FC<TableProps> = (tableProps) => {
                 {tableProps.outboundJourneyDB.map((journey, journeyIndex) => (
                     <tr key = { journeyIndex }>
                         <td>{journeyIndex}</td>
-                        <td>{journey.departureTime}</td>
-                        <td>{journey.arrivalTime}</td>
+                        <td>{journey.departureTime.toTimeString()}</td>
+                        <td>{journey.arrivalTime.toTimeString()}</td>
                         <td>{journey.status}</td>
                     </tr>
                 ))}

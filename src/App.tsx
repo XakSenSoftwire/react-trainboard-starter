@@ -34,7 +34,7 @@ const App = () => {
     const [journeyDB, setJourneyDB] = useState<JourneyRow[]>([]);
 
     // Callback function to receive the selected value from the child component
-    const handleJourneyDB = (value: Array<JourneyRow>) => {
+    const handleJourneyDB = (value: JourneyRow[]) => {
         setJourneyDB(value);
     };
 
