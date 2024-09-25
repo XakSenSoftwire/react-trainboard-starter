@@ -17,8 +17,7 @@ const Dropdown: React.FC<DropdownProps> = (dropdownProps) => {
 
     return (
         <div>
-            <h3>Choose an option:</h3>
-            <select value = { station } onChange = { handleSelection }>
+            <select className = 'dropdown-style' value = { station } onChange = { handleSelection }>
                 <option value = "" disabled>Select an option</option>
                 <option value = "WAT">Waterloo</option>
                 <option value = "VXH">Vauxhall</option>

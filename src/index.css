@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header-title {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 2.5rem;
+  color: #000000;
+  margin: 10 10;
+  font-family: 'Arial', sans-serif;
+}
+
+.departure-title {
+  text-align: center;
+  font-size: 1 rem;
+  color: #990000;
+  font-family: 'Arial', sans-serif;
+}
+
+.arrival-title {
+    text-align: center;
+    font-size: 1 rem;
+    color: #008300;
+    font-family: 'Arial', sans-serif;
+}
+
+.button-container {
+  display: flex;                 /* Use flexbox to center the button */
+  justify-content: center;       /* Center horizontally */
+  align-items: center;           /* Center vertically */
+  height: 10vh;                /* Make the container full height of the viewport */
+}

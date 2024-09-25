@@ -1,0 +1,64 @@
+/* Style for the table */
+.table-style {
+  width: auto;
+  table-layout: auto;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.table-style th, .table-style td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-style th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.table-style tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-style tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style for the button */
+.button-style {
+  font-size: 1.5rem;            /* Set text size to 1.5 rem */
+  height: 40px;                 /* Set height to 40px (more than 30px) */
+  padding: 0 15px;              /* Add horizontal padding */
+  border: none;                 /* Remove default border */
+  border-radius: 25px;          /* Rounded corners */
+  background-color: #383838;    /* Button background color */
+  color: white;                 /* Text color */
+  cursor: pointer;              /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  text-align: center;
+}
+
+.button-style:hover {
+  background-color: #0056b3;    /* Darker background on hover */
+}
+
+/* Style for the dropdown */
+.dropdown-style {
+  display: block;
+  margin: 10px auto;
+}
+
+.outer-container {
+  display: flex;
+  width: 100%;
+}
+
+.inner-container {
+  flex: 1;
+  box-sizing: border-box;
+  width: 50%;            /* Set the width of the container to 50% */
+  margin: 0 auto;       /* Center the container horizontally */
+  text-align: center;    /* Center-align text inside the container */
+}

@@ -1,13 +1,14 @@
 import React from 'react';
-import { JourneyRow } from '../App';
+import './styles.css';
+import { JourneyRowFormatted } from '../App';
 
 interface TableProps {
-    outboundJourneyDB: Array<JourneyRow>;
+    outboundJourneyDB: JourneyRowFormatted[];
 }
 
 const Table: React.FC<TableProps> = (tableProps) => {
     return (
-        <table>
+        <table className = 'table-style'>
             <thead>
                 <tr>
                     <th>Train Number</th>
@@ -20,8 +21,8 @@ const Table: React.FC<TableProps> = (tableProps) => {
                 {tableProps.outboundJourneyDB.map((journey, journeyIndex) => (
                     <tr key = { journeyIndex }>
                         <td>{journeyIndex}</td>
-                        <td>{journey.departureTime.toTimeString()}</td>
-                        <td>{journey.arrivalTime.toTimeString()}</td>
+                        <td>{journey.departureTime}</td>
+                        <td>{journey.arrivalTime}</td>
                         <td>{journey.status}</td>
                     </tr>
                 ))}
